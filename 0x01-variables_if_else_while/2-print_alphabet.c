@@ -6,9 +6,12 @@
  * Return: 0 (Sucess)
  **/
 int main(void)
-for (char i = 'A'; i <= 'z'; i++)
+{
+char i;
+for (i = 'a'; i <= 'z'; i++)
 {
 putchar(i);
 }
+putchar(\n);
 return (0);
 }
