@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
 #include "holberton.h"
 /**
  * main - entry block
@@ -13,8 +10,9 @@ int i = 0;
 String c = "Holberton";
 while (c[i] != '\0')
 {
-putchar (c[i]);
+_putchar (c[i]);
 i++;
 }
+_putchar ('\n');
 return (0);
 }
