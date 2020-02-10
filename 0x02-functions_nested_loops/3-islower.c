@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <ctype.h>
 /**
  *_islower- use only user defined variables to create output
  *@c : take a character
