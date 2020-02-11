@@ -17,6 +17,7 @@ else
 {
 m = ((n < 0) ? (-n) : (n));
 res = m % 10;
+_putchar(res + '0');
 return (res);
 }
 }
