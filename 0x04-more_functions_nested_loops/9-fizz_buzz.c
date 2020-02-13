@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
  *main - print all numbers
- *
+ *Return: return0
  **/
 int main(void)
 
