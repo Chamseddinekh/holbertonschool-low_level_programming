@@ -21,12 +21,12 @@ else if (i % 5 == 0)
 {
 printf("Buzz ");
 }
- else
+else
 {
 printf("%d ", i);
 }
 }
-printf ("Buzz");
+printf("Buzz");
 printf("\n");
 return (0);
 }
