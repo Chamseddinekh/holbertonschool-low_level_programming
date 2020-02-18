@@ -1,8 +1,7 @@
 #include "holberton.h"
 /**
  *  puts_half - entry block
- * @a: pointer 
- *@n : var
+ * @str: pointer
  * Return: 0 (Sucess)
  **/
 
