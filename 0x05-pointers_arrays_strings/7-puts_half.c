@@ -1,10 +1,3 @@
-#include "holberton.h"
-/**
- *  puts_half - entry block
- * @str: string
- * Return: 0 (Sucess)
- **/
-
 void puts_half(char *str)
 {
 int i, n, len = 0;
@@ -19,9 +12,8 @@ _putchar(str[i]);
 }
 else
 {
-n = len / 2;
+n = (len - 1) / 2;
 for (i = n; i < len; i++)
 _putchar(str[i]);
 }
-_putchar('\n');
 }
