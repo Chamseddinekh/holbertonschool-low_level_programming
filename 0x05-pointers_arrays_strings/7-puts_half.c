@@ -18,9 +18,10 @@ for (i = n; i < len; i++)
 _putchar(str[i]);
 }
 else
+{
 n = len / 2;
 for (i = n; i < len; i++)
 _putchar(str[i]);
-
-
+}
+_putchar('\n');
 }
