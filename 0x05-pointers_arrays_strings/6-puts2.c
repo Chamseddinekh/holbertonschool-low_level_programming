@@ -2,13 +2,16 @@
 /**
  *  puts2 - entry block
  * @str: string
+ * Return: 0 (Sucess)
  **/
 void puts2(char *str)
 {
-int i, length;
-i = 0;
-length = _strlen(str);
-for (i = 0; i < length-1; i += 2)
+int i, len = 0;
+while (str[len] != '\0')
+len++;
+len = len - 1;
+for (i = 0; i <= len; i += 2)
+if (i % 2 == 0)
 {
 _putchar(str[i]);
 }
