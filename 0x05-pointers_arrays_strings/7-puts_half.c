@@ -1,19 +1,25 @@
+#include "holberton.h"
+/**
+ *  puts_half - entry block
+ * @a: pointer 
+ *@n : var
+ * Return: 0 (Sucess)
+ **/
+
 void puts_half(char *str)
 {
-int i, n, len = 0;
+int i, len = 0;
 while (str[len] != '\0')
 len++;
-len = len-1
-if (len % 2 == 0)
+if (len % 2 != 0)
 {
-n = len / 2;
-for (i = n; i < len; i++)
+for (i = (len / 2) + 1; i < len; i++)
 _putchar(str[i]);
 }
 else
 {
-n = (len - 1) / 2;
-for (i = n; i < len; i++)
+for (i = len / 2; i < len; i++)
 _putchar(str[i]);
 }
+_putchar('\n');
 }
