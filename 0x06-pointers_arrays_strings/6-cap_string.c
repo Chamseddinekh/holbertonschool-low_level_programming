@@ -13,7 +13,7 @@ for (i = 0; str[i] != '\0'; i++)
 {
 if (str[0] >= 97 && str[0] <= 122)
 str[0] = str[0] - 32;
-for (t = 0; t < 11; t++)
+for (t = 0; t < 14; t++)
 if (str[i] >= 97 && str[i] <= 122 && str[i - 1] == symb[t])
 str[i] = str[i] - 32;
 }
