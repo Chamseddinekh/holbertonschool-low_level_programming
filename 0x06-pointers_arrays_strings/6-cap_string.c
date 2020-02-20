@@ -1,4 +1,4 @@
-B #include "holberton.h"
+#include "holberton.h"
 /**
  * *cap_string - check the code for Holberton School students.
  * @str: variable
