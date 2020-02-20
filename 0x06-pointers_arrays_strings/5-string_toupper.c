@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  *string_toupper - check the code for Holberton School students.
- * @str: variable
+ * @str: var
  * Return: str
  */
 char *string_toupper(char *str)
