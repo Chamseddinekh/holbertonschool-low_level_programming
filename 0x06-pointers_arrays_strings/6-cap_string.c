@@ -17,5 +17,5 @@ for (t = 0; t < 11; t++)
 if (str[i] >= 97 && str[i] <= 122 && str[i - 1] == symb[t])
 str[i] = str[i] - 32;
 }
-return (s1);
+return (str);
 }
