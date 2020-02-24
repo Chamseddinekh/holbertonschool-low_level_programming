@@ -20,5 +20,5 @@ j++;
 str = &s[j];
 return (str);
 }
-return (0);
+return (NULL);
 }
