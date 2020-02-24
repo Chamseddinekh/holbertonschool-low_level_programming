@@ -13,7 +13,7 @@ char *str = NULL;
 
 for (j = 0; s[j] != '\0'; j++)
 {
-if (s[j] == c || s[j + 1] == c)
+  if (s[j] == c || s[j] == s[j + 1])
 {
 str = &s[j];
 return (str);
