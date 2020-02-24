@@ -9,9 +9,9 @@
 char *_strchr(char *s, char c)
 {
 int j = 0;
-char *str;
+char *str = NULL;
 
-while (s[j] != '\0')
+for (j = 0; j != '\0'; j++) 
 {
 while (s[j] != c && s[j + 1] != c)
 {
@@ -20,5 +20,5 @@ j++;
 str = &s[j];
 return (str);
 }
-return (NULL);
+return (str);
 }
