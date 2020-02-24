@@ -13,11 +13,10 @@ char *str;
 
 while (s[j] != '\0')
 {
-while (s[j] != c && s[j] != s[j + 1])
+while (s[j] != c && s[j + 1] != c)
 {
 j++;
 }
-
 str = &s[j];
 return (str);
 }
