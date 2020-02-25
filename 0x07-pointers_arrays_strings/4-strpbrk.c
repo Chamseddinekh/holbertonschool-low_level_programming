@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * *_strspn - check the code for Holberton School students.
+ * *_strpbrk - check the code for Holberton School students.
  * @s: sxsd
  * @accept: positive number
  * Return: i
