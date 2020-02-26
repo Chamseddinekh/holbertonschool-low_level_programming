@@ -1,4 +1,5 @@
-B#include "holberton.h"
+#include "holberton.h"
+#include <stdio.h>
 /**
  *_strlen_recursion - print length
  * @s: string
@@ -6,10 +7,12 @@ B#include "holberton.h"
  */
 int _strlen_recursion(char *s)
 {
-{
 if (s == NULL)
+{
 return (0);
+}
 else if (*s)
+{
 return (1 + _strlen_recursion(s + 1));
 }
 }
