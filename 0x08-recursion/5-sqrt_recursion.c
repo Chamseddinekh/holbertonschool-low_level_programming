@@ -1,16 +1,16 @@
-#include "holberton.h"
+B#include "holberton.h"
 /**
- *natural_sqrt - sqrt
- *@num: int
- *@i: int
- *Return: sqrt number
+ * natural_sqrt - print length
+ * @num: int
+ *@i : int
+ *Return : sqrt
  */
 int natural_sqrt(int num, int i)
 {
-while (i * i != num && i < num)
-i++;
-if (i *i == num && i > 0)
+if (i * i == num)
 return (i);
+else if (i * i != num && i < num)
+natural_sqrt(num, i + 1);
 else
 return (-1);
 }
@@ -18,10 +18,11 @@ return (-1);
  *_sqrt_recursion - result
  *@n: int
  *Return: sqrt
-*/
+ */
 int _sqrt_recursion(int n)
 {
-int i;
-i = natural_sqrt(n, 0);
-return (i);
+if (n < 0)
+return (-1);
+else
+return (natural_sqrt(n, 1));
 }
