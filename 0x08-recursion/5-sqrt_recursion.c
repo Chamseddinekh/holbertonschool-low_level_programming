@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 /**
  *natural_sqrt - sqrt
  *@num: int
