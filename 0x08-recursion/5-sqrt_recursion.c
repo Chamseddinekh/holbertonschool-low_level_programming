@@ -9,7 +9,7 @@ int natural_sqrt(int num, int i)
 {
 while (i * i != num && i < num)
 i++;
-if (i *i == num)
+if (i *i == num && i > 0)
 return (i);
 else
 return (-1);
