@@ -7,12 +7,11 @@
  */
 int prime(int num, int i)
 {
-if (num / i == 0)
+if (i / num == 0)
 return (0);
-if (i < num)
-return (prime(num, i + 1));
-else
+else if (i + 1 == num)
 return (1);
+return (prime(num, i + 1));
 }
 /**
  *is_prime_number - result
