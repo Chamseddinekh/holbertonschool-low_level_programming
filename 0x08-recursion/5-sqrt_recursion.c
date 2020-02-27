@@ -1,16 +1,16 @@
-B#include "holberton.h"
+#include "holberton.h"
 /**
  * natural_sqrt - print length
  * @num: int
  *@i : int
- *Return : sqrt
+ *Return: sqrt
  */
 int natural_sqrt(int num, int i)
 {
 if (i * i == num)
 return (i);
-else if (i * i != num && i < num)
-natural_sqrt(num, i + 1);
+if (i * i != num && i < num)
+return (natural_sqrt(num, i + 1));
 else
 return (-1);
 }
