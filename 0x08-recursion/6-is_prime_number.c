@@ -1,4 +1,4 @@
-#include "holberton.h"
+B#include "holberton.h"
 /**
  * prime - prime number
  * @num: int
@@ -7,11 +7,11 @@
  */
 int prime(int num, int i)
 {
-if (i / num == 0)
-return (0);
-else if (i + 1 == num)
+if (i == num)
 return (1);
-return (prime(num, i + 1));
+else if (i % 1 == 0)
+return (0);
+else return (prime(num, i + 1));
 }
 /**
  *is_prime_number - result
@@ -20,5 +20,8 @@ return (prime(num, i + 1));
  */
 int is_prime_number(int n)
 {
+if (i < 2)
+return (0);
+else
 return (prime(n, 2));
 }
