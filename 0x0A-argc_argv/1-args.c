@@ -1,4 +1,4 @@
-#include<stdio.h>
+B#include<stdio.h>
 /**
  * main - printing digit
  *@argc: number of agruments
@@ -9,8 +9,8 @@ int main(int argc, char **argv)
 {
 int i;
 for (i = 0; i < argc; i++)
-; 
-printf("%d\n", i-1);
+;
+printf("%d\n", i - 1);
 argv++;
 return (0);
 }
