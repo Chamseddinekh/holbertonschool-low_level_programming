@@ -1,4 +1,4 @@
-#include<stdio.h>
+B#include<stdio.h>
 #include<stdlib.h>
 /**
  * main - printing digit
@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 int i, mul = 1;
 for (i = 0; i < argc; i++)
 ;
-if (i < 2)
+if (i < 1)
 {
 printf("Error\n");
 return (1);
@@ -19,7 +19,7 @@ return (1);
 else
 for (i = 1; i < argc; i++)
 
-mul = mul * atoi(argv[i]);
+mul = mul *atoi(argv[i]);
 printf("%d\n", mul);
 
 return (0);
