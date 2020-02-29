@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<ctype.h>
 /**
  * main - printing digit
  *@argc: number of agruments
@@ -13,12 +14,19 @@ for (i = 0; i < argc; i++)
 ;
 if (i < 3)
 {
-printf("Error\n");
-return (1);
+printf("0\n");
+return(0);
 }
-else
-for (i = 1; i < argc; i++)
+for (i = 0; i < argc; i++)
+{
+if (isdigit(atoi(argv[i])))
 sum += atoi(argv[i]);
+else
+{
+printf("Erreur\n");
+return(1);
+}
+}
 printf("%d\n", sum);
-return (0);
+return(0);
 }
