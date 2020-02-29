@@ -7,10 +7,10 @@
  **/
 int main(int argc, char **argv)
 {
-int i, sum = 0;
-for(i = 1; i < argc; i++)
-sum += i;
-printf("%d\n", sum);
+int i;
+for (i = 0; i < argc; i++)
+; 
+printf("%d\n", i-1);
 argv++;
 return (0);
 }
