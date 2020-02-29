@@ -11,16 +11,15 @@ int main(int argc, char **argv)
 int i, mul = 1;
 for (i = 0; i < argc; i++)
 ;
-if (i < 1)
+if (i < 3)
 {
 printf("Error\n");
 return (1);
 }
 else
-for (i = 1; i < argc; i++)
 
+for (i = 1; i < argc; i++)
 mul = mul *atoi(argv[i]);
 printf("%d\n", mul);
-
 return (0);
 }
