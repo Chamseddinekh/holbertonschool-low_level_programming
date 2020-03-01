@@ -9,7 +9,7 @@
  **/
 int main(int argc, char **argv)
 {
-  int j, i, sum = 0;
+int j, i, sum = 0;
 for (i = 0; i < argc; i++)
 ;
 if (i < 2)
@@ -20,7 +20,7 @@ return (0);
 for (i = 1; i < argc; i++)
 {
 j = 0;
-while(argv[i][j] != '\0')
+while (argv[i][j] != '\0')
 if (isdigit(argv[i][j]) && atoi(argv[i]) > 0)
 {
 sum += atoi(argv[i]);
