@@ -27,7 +27,7 @@ j++;
 }
 else
 {
-printf("Erreur\n");
+printf("Error\n");
 return (1);
 }
 }
