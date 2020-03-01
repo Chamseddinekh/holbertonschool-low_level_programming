@@ -19,12 +19,9 @@ return (0);
 }
 for (i = 1; i < argc; i++)
 {
-j = 0;
-while (argv[i][j] != '\0')
 if (isdigit(argv[i][j]) && atoi(argv[i]) > 0)
 {
 sum += atoi(argv[i]);
-j++;
 }
 else
 {
