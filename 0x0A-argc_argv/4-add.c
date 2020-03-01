@@ -15,18 +15,20 @@ for (i = 0; i < argc; i++)
 if (i < 3)
 {
 printf("0\n");
-return(0);
+return (0);
 }
-for (i = 0; i < argc; i++)
+for (i = 1; i < argc; i++)
 {
-if (isdigit(atoi(argv[i])))
+  if (isdigit(*argv[i]) && atoi(argv[i]) > 0)
+{
 sum += atoi(argv[i]);
+}
 else
 {
 printf("Erreur\n");
-return(1);
+return (1);
 }
 }
 printf("%d\n", sum);
-return(0);
+return (0);
 }
