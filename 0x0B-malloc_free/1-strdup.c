@@ -23,5 +23,5 @@ p[j] = str[i];
 j++;
 }
 return (p);
-free(p);
+
 }
