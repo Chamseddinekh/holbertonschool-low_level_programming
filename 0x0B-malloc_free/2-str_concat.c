@@ -17,18 +17,18 @@ s2 = "";
 for (i = 0; s1[i] != '\0'; i++)
 ;
 length1 = i;
-for (j = 0; s1[j] != '\0'; j++)
+for (j = 0; s2[j] != '\0'; j++)
 ;
 j = j + 1;
-length = i + j;
+length = length1 + j;
 str = malloc(length *sizeof(char));
 if (str == NULL)
 return (NULL);
-for (i = 0; i <= length1; i++)
+for (i = 0; s1[i] != '\0'; i++)
 {
 str[i] = s1[i];
 }
-for (j = 0; j <= length; j++)
+for (j = 0; s2[j] != '\0'; j++)
 {
 str[j + length1] = s2[j];
 }
