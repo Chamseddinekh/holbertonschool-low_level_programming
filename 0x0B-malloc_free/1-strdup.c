@@ -13,8 +13,8 @@ if (str == NULL)
 return (NULL);
 for (i = 0; str[i] != '\0'; i++)
 ;
-i += 1; 
-p = malloc(i * sizeof(char));
+i = i + 1;
+p = malloc(i *sizeof(char));
 if (p == NULL)
 {
 return (NULL);
