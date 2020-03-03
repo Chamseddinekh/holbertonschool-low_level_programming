@@ -25,6 +25,6 @@ for (i = 0; str[i] != '\0'; i++)
 p[j] = str[i];
 j++;
 }
+free(str);
 return (p);
-
 }
