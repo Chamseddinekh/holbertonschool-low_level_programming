@@ -13,10 +13,10 @@ if (str == NULL)
 return (NULL);
 for (i = 0; str[i] != '\0'; i++)
 ;
+ i += 1; 
 p = malloc(i * sizeof(char));
 if (p == NULL)
 {
-free(p);
 return (NULL);
 }
 else
@@ -25,6 +25,5 @@ for (i = 0; str[i] != '\0'; i++)
 p[j] = str[i];
 j++;
 }
-free(str);
 return (p);
 }
