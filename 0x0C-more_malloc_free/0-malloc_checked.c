@@ -2,7 +2,7 @@
 #include <limits.h>
 #include "holberton.h"
 /**
- * malloc_checked - allocate memory 
+ * malloc_checked - allocate memory
  *@b: size of arry
  *Return: pointer
  **/
@@ -16,5 +16,5 @@ if (ptr == NULL)
 ptr = &num;
 return (ptr);
 }
-return(ptr);
+return (ptr);
 }
