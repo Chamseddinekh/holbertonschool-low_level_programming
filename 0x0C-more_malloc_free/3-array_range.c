@@ -1,7 +1,7 @@
 #include<stdlib.h>
 #include "holberton.h"
 /**
- * sarray_range - array from min to max
+ * array_range - array from min to max
  *@min: min number
  *@max: max number
  *Return: pointer array
