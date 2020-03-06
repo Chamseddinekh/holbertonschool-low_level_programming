@@ -1,7 +1,7 @@
 #include<stdlib.h>
 #include "holberton.h"
 /**
- * string_nconcat - concat 2 strings
+ * _calloc - concat 2 strings
  *@nmemb: number of elemnts
  *@size: size of bytes
  *Return: pointer array allocated
