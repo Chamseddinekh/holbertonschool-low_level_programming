@@ -8,13 +8,9 @@
  **/
 void *malloc_checked(unsigned int b)
 {
-int *ptr;
-int num = 98;
-ptr = malloc(b * sizeof(ptr));
+unsigned int *ptr;
+ptr = malloc(b);
 if (ptr == NULL)
-{
-ptr = &num;
-return (ptr);
-}
+exit(98);
 return (ptr);
 }
