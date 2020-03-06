@@ -39,5 +39,6 @@ while (s2[m] != '\0' && m < n)
 str[m + i] = s2[m];
 m++;
 }
+str[i + m] = '\0';
 return (str);
 }
