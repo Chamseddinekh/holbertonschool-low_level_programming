@@ -16,6 +16,5 @@ return (NULL);
 black->name = name;
 black->age = age;
 black->owner = owner;
-}
 return (black);
 }
