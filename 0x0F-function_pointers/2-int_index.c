@@ -4,6 +4,7 @@
 *@array: pointer to array
 *@size: size of array
 *@cmp: function pointer
+*Return: number of occurrence
 */
 int int_index(int *array, int size, int (*cmp)(int))
 {
