@@ -1,7 +1,6 @@
-#include <stdio.h>
 #include <stdarg.h>
 /**
-* sum_them_all - sum of n integer
+*sum_them_all - sum of n integer
 *@n: number of interger passed
 *Return: return sum of all argumets
 */
