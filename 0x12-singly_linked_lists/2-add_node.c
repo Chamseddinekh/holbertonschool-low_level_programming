@@ -20,7 +20,7 @@ return (NULL);
 strcp = malloc(i);
 if (strcp == NULL)
 {
-free (new);
+free(new);
 return (NULL);
 }
 strcp = strdup(str);
