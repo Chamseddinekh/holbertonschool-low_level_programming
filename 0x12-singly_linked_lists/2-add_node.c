@@ -19,7 +19,10 @@ if (new == NULL)
 return (NULL);
 strcp = malloc(i);
 if (strcp == NULL)
+{
+free (new);
 return (NULL);
+}
 strcp = strdup(str);
 new->str = strcp;
 new->len = i;
