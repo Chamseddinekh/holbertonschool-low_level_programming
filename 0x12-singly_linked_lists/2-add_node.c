@@ -17,7 +17,7 @@ i++;
 new = (list_t *)malloc(sizeof(list_t));
 if (new == NULL)
 return (NULL);
-strcp = malloc((i + 1) * sizeof(char));
+strcp = malloc(i);
 if (strcp == NULL)
 return (NULL);
 strcp = strdup(str);
