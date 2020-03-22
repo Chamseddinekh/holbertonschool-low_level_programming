@@ -1,11 +1,9 @@
 #include "lists.h"
 /**
-*add_node - funtion add node
-*@head: Structure of linked list
-*@str: string to add in the node
-*Return: the address of the new element, or NULL if it failed
+* PrintBeforeMain - funtion add node
 */
-void PrintBeforeMain()
+void PrintBeforeMain(void)
 {
-    printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
+printf("You're beat! and yet, you must allow,\n");
+printf("I bore my house upon my back!\n");
 }
