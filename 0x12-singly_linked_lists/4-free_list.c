@@ -1,5 +1,3 @@
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
 /**
 *free_list - funtion add node at the end of list
@@ -11,6 +9,6 @@ while (head != NULL)
 {
 free(head->str);
 free(head);
-
+head = head->next;
 }
 }
