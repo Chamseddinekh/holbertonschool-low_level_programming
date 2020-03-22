@@ -30,14 +30,15 @@ new->next = NULL;
 if (*head == NULL)
 {
 *head = new;
-return (*head);
 }
 else
+{
 ptr = *head;
 while (ptr->next != NULL)
 {
 ptr = ptr->next;
 }
 ptr->next = new;
+}
 return (*head);
 }
