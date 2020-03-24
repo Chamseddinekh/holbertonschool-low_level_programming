@@ -10,8 +10,8 @@ if (ptr)
 {
 while (ptr)
 {
-free(ptr);
 ptr = ptr->next;
+free(ptr);
 }
 *head = NULL;
 }
