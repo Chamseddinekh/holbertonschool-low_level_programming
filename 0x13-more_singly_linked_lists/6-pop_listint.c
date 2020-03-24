@@ -5,8 +5,8 @@
  */
 int pop_listint(listint_t **head)
 {
-    listint_t *ptr = *head;
-    int n;
+listint_t *ptr = *head;
+int n;
 if (*head == NULL)
 return (0);
 
