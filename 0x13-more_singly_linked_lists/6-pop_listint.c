@@ -2,6 +2,7 @@
 /**
  * pop_listint - pop list
  * @head: list to print
+ * Return: return n
  */
 int pop_listint(listint_t **head)
 {
