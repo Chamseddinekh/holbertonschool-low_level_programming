@@ -6,7 +6,8 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-unsigned int len = 0, dec = 0, i = 0;
+unsigned int dec = 0;
+int len = 0, powr = 1;
 if (b == NULL)
 return (0);
 while (b[len] != '\0')
@@ -16,10 +17,10 @@ len++;
 else
 return (0);
 }
-while (b[i] != '\0')
+while (len - 1 >= 0)
 {
-dec = dec + (1 << (len - 1) * b[i]);
-i++;
+dec += powr * (b[--len] - '0');
+powr *= 2;
 }
 return (dec);
 }
