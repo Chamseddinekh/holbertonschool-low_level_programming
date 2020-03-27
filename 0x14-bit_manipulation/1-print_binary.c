@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_binary - function that prints the binary representation of a number.
- * @b: number to convert
+ * @n: number to convert
  */
 void print_binary(unsigned long int n)
 {
