@@ -9,25 +9,20 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 char buffer[blok];
-size_t n, i = 0;
-FILE *ptr;
+size_t n, cmp = 0;
+int ptr;
 if (filename == NULL)
 return (0);
 
-ptr = fopen(filename, "r");
-if (ptr == NULL)
+ptr = open(filename, O_RDONLY);
+if (ptr == -1)
 return (0);
 if (ptr)
 {
-while ((n = fread(buffer, 1, sizeof(buffer), ptr)) > 0)
-{
+while ((n = read(ptr, buffer, sizeof(letters))))
+cmp = write(1, buffer, n);
+}
+close(ptr);
 
-i = fwrite(buffer, 1, n, stdout);
-}
-if (ferror(ptr))
-return (0);
-}
-fclose(ptr);
-letters = i;
-return (letters);
+return (cmp);
 }
