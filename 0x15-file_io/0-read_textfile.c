@@ -14,6 +14,8 @@ if (filename == NULL)
 return (0);
 
 buffer = malloc(letters);
+if (!buffer)
+return (0);
 
 fop = open(filename, O_RDONLY);
 if (fop == -1)
