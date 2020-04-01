@@ -1,6 +1,6 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
-#define blok 1024
+#define blok 65000
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
