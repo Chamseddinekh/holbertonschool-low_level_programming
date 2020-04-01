@@ -12,18 +12,23 @@ char *buffer;
 int fop, fr, fw;
 if (filename == NULL)
 return (0);
+
 buffer = malloc(letters);
-if (!buffer)
-return (0);
+
 fop = open(filename, O_RDONLY);
 if (fop == -1)
 return (0);
+
 fr = read(fop, buffer, letters);
 if (fr == -1)
 return (0);
+
 fw = write(1, buffer, fr);
 if (fw == -1 || fw != fr)
+{
+free (buffer);
 return (0);
+}
 close(fop);
 return (fr);
 }
