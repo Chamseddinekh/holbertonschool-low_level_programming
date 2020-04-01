@@ -6,13 +6,13 @@ int off, oft, rff, wft, cl, cl1;
 char buffer[blok];
 if (ac != 3)
 {
-printf("Usage: cp file_from file_to\n");
+printf("Usage: cp %s %s\n", av[1], av[2]);
 exit(97);
 }
 off = open(av[1], O_RDWR, 664);
 if (off == -1)
 {
-printf("Error: Can't read from file NAME_OF_THE_FILE\n");
+printf("Error: Can't read from %s\n", av[1]);
 exit(98);
 }
 oft = open(av[2], O_RDWR | O_CREAT | O_TRUNC, 664);
@@ -21,20 +21,20 @@ exit(99);
 rff = read(off, buffer, 1024);
 if (rff == -1)
 {
-printf("Error: Can't read from file NAME_OF_THE_FILE\n");
+printf("Error: Can't read from file  %s\n", av[1]);
 exit(98);
 }
 wft = write(STDOUT_FILENO, buffer, rff);
 if (wft == -1)
 {
-printf("Error: Can't write to NAME_OF_THE_FILE\n");
+printf("Error: Can't write to  %s\n", av[2]);
 exit(99);
 }
 cl = close(off);
 cl1 = close(oft);
 if (cl == -1 || cl1 == -1)
 {
-printf("Error: Can't close fd FD_VALUE\n");
+printf("Error: Can't close fd %d\n",off);
 return (100);
 }
 return (1);
