@@ -26,7 +26,7 @@ if (off == -1)
 dprintf(STDERR_FILENO, "Error: Can't write to  %s\n", av[2]);
 exit(99);
 }
-rff = read(off, buffer, 1024);
+rff = read(off, buffer, blok);
 if (rff == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file  %s\n", av[1]);
