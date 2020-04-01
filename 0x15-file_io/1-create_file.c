@@ -1,10 +1,10 @@
 #include "holberton.h"
 #include <string.h>
 /**
- * read_textfile - function that reads a text file
+ * create_file - function that create file
  * @filename: name of file to read
- * @letters: the number of letters it should read and print
- * Return: returns the actual number of letters it could read and print
+ * @text_content: text to writhe in the file
+ * Return: create new file
  */
 
 int create_file(const char *filename, char *text_content)
@@ -19,7 +19,7 @@ return (-1);
 
 if (text_content)
 {
-tw = write (fd, text_content, strlen(text_content));
+tw = write(fd, text_content, strlen(text_content));
 if (tw == -1)
 return (tw);
 }
