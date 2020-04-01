@@ -32,14 +32,11 @@ if (rff == -1)
 dprintf(STDERR_FILENO, "Error: Can't read from file  %s\n", av[1]);
 exit(98);
 }
-
 wft = write(oft, buffer, rff);
 if (wft == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to  %s\n", av[2]);
 exit(99);
-
-
 }
 cl = close(off);
 cl1 = close(oft);
