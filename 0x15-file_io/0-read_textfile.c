@@ -22,6 +22,8 @@ fr = read(fop, buffer, letters);
 if (fr == -1)
 return (0);
 fw = write(1, buffer, fr);
+if (fw == -1)
+return (0);
 close(fop);
 return (fw);
 }
