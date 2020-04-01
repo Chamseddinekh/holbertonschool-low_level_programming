@@ -42,5 +42,5 @@ if (cl == -1 || cl1 == -1)
 dprintf(STDERR_FILENO,"Error: Can't close fd %d\n", off);
 return (100);
 }
-return (1);
+return (0);
 }
