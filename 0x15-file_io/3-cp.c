@@ -1,5 +1,10 @@
 #include "holberton.h"
-
+/**
+ * main - return 1
+ * @ac: number of arguments
+ * @av: array of argumets
+ * Return: 1 if ok
+ */
 int main(int ac, char **av)
 {
 int off, oft, rff, wft, cl, cl1;
