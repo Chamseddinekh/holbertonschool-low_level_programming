@@ -8,29 +8,18 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-char buffer[blok];
-int n, length = 0, ptr;
-
+char *buffer;
+int fop, fr, fw;
 if (filename == NULL)
 return (0);
-
-ptr = open(filename, O_RDONLY);
-if (ptr == -1)
+buffer = malloc(letters);
+fop = open(filename, O_RDONLY);
+if (fop == -1)
 return (0);
-
-if (ptr)
-{
-while ((n = read(ptr, buffer, sizeof(letters))))
-{
-if (n == -1)
+fr = read(fop, buffer, letters);
+if (fr == -1)
 return (0);
- write(1, buffer, n);
-}
-buffer[letters] = '\0';
-}
-while (buffer[length] != '\0')
-length++;
-close(ptr);
-
-return (length);
+fw = write(1, buffer, fr);
+close(fop);
+return (fw);
 }
