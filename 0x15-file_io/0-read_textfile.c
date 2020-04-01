@@ -17,7 +17,7 @@ buffer = malloc(letters);
 if (!buffer)
 return (0);
 
-fop = open(filename, O_RDONLY);
+fop = open(filename, O_RDWR);
 if (fop == -1)
 return (0);
 
@@ -28,7 +28,7 @@ return (0);
 fw = write(1, buffer, fr);
 if (fw == -1 || fw != fr)
 {
-free (buffer);
+free(buffer);
 return (0);
 }
 close(fop);
