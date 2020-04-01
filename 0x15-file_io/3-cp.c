@@ -22,8 +22,10 @@ exit(98);
 }
 oft = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 if (off == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't write to  %s\n", av[2]);
 exit(99);
-
+}
 rff = read(off, buffer, 1024);
 if (rff == -1)
 {
