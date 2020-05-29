@@ -17,6 +17,6 @@ if (hashtable->array == NULL)
 free(hashtable);
 return (NULL);
 }
-hashtable->size = size;
+
 return (hashtable);
 }
